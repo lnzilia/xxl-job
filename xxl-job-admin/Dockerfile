@@ -12,7 +12,7 @@ ENV TZ=PRC
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # copy jar
-ADD target/xxl-job-admin-*.jar /app.jar
+ADD target/xxl-job-admin-3.3.2.jar /app.jar
 
 # command
 # log home: -e LOG_HOME=/data/applogs
